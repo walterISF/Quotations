@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGray">
+
+    <LinearLayout android:id="@+id/llCoin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+        <TextView android:id="@+id/tvName"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+        <TextView android:id="@+id/tvSymbol"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+        <TextView android:id="@+id/tvRank"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/llQuotation"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlQuotationUsd"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/tvUsdPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usdPrice"/>
+            <TextView android:id="@+id/tvUsdPrice"
+                android:layout_below="@id/tvUsdPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlQuotationBtc"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/tvBtcPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btcPrice"/>
+            <TextView android:id="@+id/tvBtcPrice"
+                android:layout_below="@id/tvBtcPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/llInfo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/llAvailableSupply"
+            android:orientation="vertical"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp">
+            <TextView android:id="@+id/tvAvailableSupllyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_supply"
+                android:textSize="12sp"/>
+            <TextView android:id="@+id/tvAvailableSuplly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/llVolume24h"
+            android:orientation="vertical"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp">
+            <TextView android:id="@+id/tvVolume24hText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volume_24h"
+                android:textSize="12sp"/>
+            <TextView android:id="@+id/tvVolume24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/llChange24h"
+            android:orientation="vertical"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp">
+            <TextView android:id="@+id/tvChange24hText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_24h"
+                android:textSize="12sp"/>
+            <TextView android:id="@+id/tvChange24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/vwDivider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

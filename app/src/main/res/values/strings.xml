@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quotations</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_quotations">Quotations</string>
+    <string name="usdPrice">USD Price</string>
+    <string name="available_supply">Available Supply</string>
+    <string name="volume_24h">Volume 24h</string>
+    <string name="change_24h">% Change 24h</string>
+    <string name="btcPrice">BTC Price</string>
+    <string name="user">E-mail address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register here !</string>
+    <string name="title_activity_register">Register</string>
+    <string name="userName">User name</string>
+    <string name="userEmail">User e-mail address</string>
+    <string name="userRegister">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_quotation_item">QuotationItem</string>
+    <string name="volume">Volume (24h)</string>
+    <string name="marketCap">Market Cap</string>
+    <string name="total_supply">Total Supply</string>
+    <string name="last_update">Last Update</string>
+    <string name="change">% Change (24h)</string>
+    <string name="percent1h">% Change (1h)</string>
+    <string name="percent7d">% Change (7d)</string>
+    <string name="item_return">Return</string>
+</resources>

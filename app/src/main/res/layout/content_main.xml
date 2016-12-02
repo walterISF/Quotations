@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="br.estudy.allan.quotations.Main"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView android:id="@+id/ivUserImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+    <LinearLayout android:id="@+id/llLoginArea"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ivUserImg">
+        <EditText android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorGray"
+            android:textSize="25sp"
+            android:background="@color/colorLightYellow"
+            android:text="@string/user"/>
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorGray"
+            android:textSize="25sp"
+            android:background="@color/colorLightYellow"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:text="@string/password"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llLoginArea"
+        android:padding="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGreen"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        />
+    <TextView android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/register"
+        android:textSize="25dp"
+        android:padding="16dp"
+        android:textAlignment="center"/>
+</RelativeLayout>
+
